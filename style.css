@@ -1,0 +1,101 @@
+
+
+.gradient-background {
+    background: radial-gradient(circle, #FAF7F0, #B7B7B7, #CB80AB);
+    background-size: 180% 180%;
+    animation: gradient-animation 20s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    25%{
+        background-position: 25% 75%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75%{
+        background-position: 75% 25%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .background{
+    background-color: #f8eef4;
+  }
+
+  .profile-pic{
+    border-radius: 50%;
+    height: 8rem;
+    border: #b98aad solid 5pt;
+  }
+
+
+  .barlow-light {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+  }
+
+  .test{
+    background-color: rgb(237, 229, 235);
+  }
+
+  .barlow-semibold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-style: normal;
+  }
+
+  .barlow-bold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-style: normal;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    gap: 20px;
+    padding: 2rem;
+    
+  }
+  .about{
+    font-size: 1.5rem;
+  }
+
+  .grid-item{
+    background-color: rgb(243, 241, 242);
+    padding: 1rem;
+    border-radius: 2%;
+  }
+
+  .container-span{
+    grid-column: span 3;
+  }
+
+
+ @media (max-width: 600px) {
+    .grid-container{
+      grid-template-columns: 1fr;   
+      gap: 10px;
+    }
+
+    .about{
+      height: max-content;
+    }
+ }
